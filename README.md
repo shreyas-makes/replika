@@ -34,3 +34,65 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Project Structure
+
+The project structure is as follows:
+
+```
+.
+├── app
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components.json
+├── next.config.mjs
+├── package.json
+├── postcss.config.mjs
+├── public
+│   ├── next.svg
+│   └── vercel.svg
+├── tailwind.config.ts
+├── tsconfig.json
+└── .eslintrc.json
+```
+
+## Tailwind CSS
+
+This project uses Tailwind CSS for styling. The configuration can be found in `tailwind.config.ts` and `app/globals.css`.
+
+## Utilities
+
+Utility functions are located in `lib/utils.ts`. The `cn` function is used to merge class names.
+
+## Aliases
+
+The project uses path aliases defined in `components.json` and `tsconfig.json`:
+
+```json
+{
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  }
+}
+```
+
+## TypeScript
+
+The project is written in TypeScript. Type definitions and configurations are located in `tsconfig.json`.
+
+## Linting
+
+ESLint is used for linting. The configuration can be found in `.eslintrc.json`.
+
+## PostCSS
+
+PostCSS is used for processing CSS. The configuration can be found in `postcss.config.mjs`.
+
+## Git Ignore
+
+The `.gitignore` file includes common files and directories to be ignored by Git.
